@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#4338ca" />
+    </linearGradient>
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#15803d" />
+      <stop offset="100%" stop-color="#166534" />
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="600" height="360" rx="16" fill="#090d16" />
+
+  <!-- Game screen window -->
+  <rect x="60" y="40" width="480" height="280" rx="12" fill="url(#skyGrad)" stroke="#6366f1" stroke-width="2"/>
+
+  <!-- Stars / Space dust -->
+  <circle cx="100" cy="80" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="160" cy="120" r="1.5" fill="#fef08a" opacity="0.9"/>
+  <circle cx="230" cy="70" r="2.5" fill="#ffffff" opacity="0.6"/>
+  <circle cx="340" cy="95" r="1.5" fill="#fef08a" opacity="0.7"/>
+  <circle cx="450" cy="75" r="2" fill="#ffffff" opacity="0.85"/>
+  <circle cx="490" cy="115" r="3" fill="#38bdf8" opacity="0.6"/>
+
+  <!-- Distant mountains -->
+  <polygon points="60,250 140,160 220,250" fill="#3730a3" opacity="0.6"/>
+  <polygon points="180,250 280,140 380,250" fill="#312e81" opacity="0.8"/>
+  <polygon points="320,250 420,170 520,250" fill="#3730a3" opacity="0.5"/>
+
+  <!-- Ground -->
+  <rect x="60" y="240" width="480" height="80" rx="4" fill="url(#groundGrad)"/>
+  <line x1="60" y1="242" x2="540" y2="242" stroke="#4ade80" stroke-width="4"/>
+
+  <!-- Floating Platform -->
+  <rect x="220" y="170" width="120" height="18" rx="4" fill="#a16207" stroke="#ca8a04" stroke-width="2"/>
+  <line x1="222" y1="172" x2="338" y2="172" stroke="#4ade80" stroke-width="3"/>
+
+  <!-- Collectible Coin / Crystal -->
+  <circle cx="280" cy="140" r="12" fill="#facc15" stroke="#eab308" stroke-width="2"/>
+  <polygon points="280,132 287,140 280,148 273,140" fill="#fef08a"/>
+
+  <!-- Hero Character (Pixel Art aesthetic) -->
+  <g transform="translate(140, 195)">
+    <!-- Body -->
+    <rect x="10" y="10" width="25" height="35" rx="5" fill="#0284c7"/>
+    <!-- Head -->
+    <rect x="12" y="-8" width="21" height="18" rx="4" fill="#fde047"/>
+    <!-- Eyes -->
+    <rect x="23" y="-3" width="4" height="4" fill="#0f172a"/>
+    <!-- Sword or Staff -->
+    <line x1="38" y1="5" x2="38" y2="40" stroke="#f43f5e" stroke-width="4" stroke-linecap="round"/>
+    <!-- Shield -->
+    <ellipse cx="6" cy="25" rx="5" ry="12" fill="#6366f1"/>
+  </g>
+
+  <!-- UI HUD on top of game -->
+  <rect x="80" y="55" width="160" height="26" rx="6" fill="#000000" opacity="0.6"/>
+  <text x="90" y="72" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#4ade80">VIDA: [||||||||  ]</text>
+  <text x="440" y="72" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#facc15">SCORE: 2450</text>
+  <text x="300" y="72" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#a5b4fc" text-anchor="middle">Pygame Engine 2D</text>
+</svg>

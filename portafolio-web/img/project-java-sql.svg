@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgJava" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1f2937" />
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="sqlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="360" rx="16" fill="url(#bgJava)" />
+
+  <!-- Code window frame -->
+  <rect x="60" y="40" width="480" height="280" rx="10" fill="#0f172a" stroke="#475569" stroke-width="2"/>
+  <rect x="60" y="40" width="480" height="35" rx="10" fill="#1e293b"/>
+  <circle cx="85" cy="57" r="5" fill="#ef4444" />
+  <circle cx="102" cy="57" r="5" fill="#f59e0b" />
+  <circle cx="119" cy="57" r="5" fill="#10b981" />
+  <text x="145" y="61" font-family="'Courier New', monospace" font-size="12" fill="#94a3b8">AppGestion.java - CRUD &amp; PostgreSQL Connector</text>
+
+  <!-- Left: Database Cylinder Stack -->
+  <g transform="translate(100, 110)">
+    <!-- Top cylinder -->
+    <ellipse cx="60" cy="30" rx="50" ry="16" fill="#3b82f6"/>
+    <path d="M 10 30 V 60 A 50 16 0 0 0 110 60 V 30 Z" fill="#2563eb"/>
+    <ellipse cx="60" cy="60" rx="50" ry="16" fill="#60a5fa" opacity="0.4"/>
+    <!-- Middle cylinder -->
+    <path d="M 10 65 V 95 A 50 16 0 0 0 110 95 V 65 Z" fill="#1d4ed8"/>
+    <ellipse cx="60" cy="95" rx="50" ry="16" fill="#3b82f6" opacity="0.4"/>
+    <!-- Bottom cylinder -->
+    <path d="M 10 100 V 130 A 50 16 0 0 0 110 130 V 100 Z" fill="#1e40af"/>
+    <ellipse cx="60" cy="130" rx="50" ry="16" fill="#2563eb" opacity="0.4"/>
+
+    <text x="60" y="34" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">SQL DATABASE</text>
+    <text x="60" y="85" font-family="'Segoe UI', sans-serif" font-size="10" fill="#e0e7ff" text-anchor="middle">Tables &amp; Relaciones</text>
+    <text x="60" y="120" font-family="'Segoe UI', sans-serif" font-size="10" fill="#e0e7ff" text-anchor="middle">Queries SQL</text>
+  </g>
+
+  <!-- Middle Connector Line -->
+  <path d="M 230 180 H 280" stroke="#f97316" stroke-width="4" stroke-dasharray="6,4"/>
+  <polygon points="280,175 292,180 280,185" fill="#f97316"/>
+
+  <!-- Right: Java App Interface Mockup -->
+  <g transform="translate(305, 100)">
+    <rect width="210" height="185" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <rect width="210" height="28" rx="8" fill="url(#headerGrad)"/>
+    <text x="15" y="19" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Panel de Control Java</text>
+
+    <!-- Table header -->
+    <rect x="15" y="42" width="180" height="18" fill="#334155" rx="3"/>
+    <text x="25" y="55" font-family="'Courier New', monospace" font-size="9" fill="#94a3b8">ID | Nombre | Estado</text>
+
+    <!-- Rows -->
+    <rect x="15" y="65" width="180" height="16" fill="#0f172a" rx="2"/>
+    <text x="25" y="77" font-family="'Courier New', monospace" font-size="8" fill="#38bdf8">01 | Registro A | Activo</text>
+
+    <rect x="15" y="86" width="180" height="16" fill="#1e293b" rx="2"/>
+    <text x="25" y="98" font-family="'Courier New', monospace" font-size="8" fill="#cbd5e1">02 | Registro B | Pendiente</text>
+
+    <rect x="15" y="107" width="180" height="16" fill="#0f172a" rx="2"/>
+    <text x="25" y="119" font-family="'Courier New', monospace" font-size="8" fill="#38bdf8">03 | Registro C | Activo</text>
+
+    <!-- Action buttons -->
+    <rect x="15" y="140" width="50" height="22" rx="4" fill="#10b981"/>
+    <text x="40" y="154" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">Insertar</text>
+
+    <rect x="75" y="140" width="55" height="22" rx="4" fill="#3b82f6"/>
+    <text x="102" y="154" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">Actualizar</text>
+
+    <rect x="140" y="140" width="55" height="22" rx="4" fill="#ef4444"/>
+    <text x="167" y="154" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">Eliminar</text>
+  </g>
+</svg>

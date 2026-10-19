@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio Profesional de Emmanuel Granados Pulgarin - Estudiante de Ingeniería Informática en Corporación Universitaria Lasallista. Desarrollo Web Full Stack y Videojuegos.">
+  <meta name="author" content="Emmanuel Granados Pulgarin">
+  <title>Emmanuel Granados | Portafolio Profesional</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="img/avatar.svg">
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons 1.11.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       NAVBAR / MENÚ DE NAVEGACIÓN RESPONSIVE
+       ====================================================================== -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-custom" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+        <span class="p-1 px-2 rounded bg-primary text-white fs-6 fw-bold">EG</span>
+        <span>Emmanuel Granados</span>
+      </a>
+
+      <!-- Botón Toggler para Móviles -->
+      <div class="d-flex align-items-center gap-2 order-lg-3">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Cambiar tema">
+          <i id="themeIcon" class="bi bi-moon-stars-fill text-primary"></i>
+        </button>
+
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Enlaces de Navegación -->
+      <div class="collapse navbar-collapse order-lg-2" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#estudios">Estudios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#habilidades">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#intereses">Áreas de Interés</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======================================================================
+       SECCIÓN a. INFORMACIÓN PERSONAL (HERO)
+       ====================================================================== -->
+  <section class="hero-section" id="inicio">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <!-- Columna de Texto -->
+        <div class="col-12 col-lg-7">
+          <div class="hero-badge">
+            <i class="bi bi-mortarboard-fill"></i>
+            <span>Ingeniería Informática • 4.° Semestre</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Hola, soy <span class="gradient-text">Emmanuel Granados Pulgarin</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            Estudiante de Ingeniería Informática | Desarrollador de Software
+          </div>
+
+          <p class="hero-bio">
+            Apasionado por la tecnología, el desarrollo web full stack y la creación de videojuegos. Cursando actualmente cuarto semestre en la <strong>Corporación Universitaria Lasallista</strong> (Medellín). Comprometido con la creación de soluciones digitales interactivas, código limpio y el aprendizaje constante de nuevas arquitecturas de software.
+          </p>
+
+          <!-- Datos de Contacto Rápidos -->
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Medellín, Colombia</span>
+            </div>
+            <div class="contact-info-item">
+              <i class="bi bi-envelope-fill"></i>
+              <a href="mailto:emmanuelgranados2007@gmail.com" class="text-decoration-none text-reset">
+                emmanuelgranados2007@gmail.com
+              </a>
+            </div>
+            <div class="contact-info-item">
+              <i class="bi bi-github"></i>
+              <a href="https://github.com/Emxs0" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-reset">
+                github.com/Emxs0
+              </a>
+            </div>
+          </div>
+
+          <!-- Botones de Acción -->
+          <div class="hero-cta-buttons d-flex flex-wrap gap-3">
+            <a href="#proyectos" class="btn btn-primary-custom d-inline-flex align-items-center gap-2">
+              <i class="bi bi-briefcase-fill"></i>
+              <span>Ver Mis Proyectos</span>
+            </a>
+            <a href="https://github.com/Emxs0" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom d-inline-flex align-items-center gap-2">
+              <i class="bi bi-github"></i>
+              <span>Perfil GitHub</span>
+            </a>
+            <a href="#contacto" class="btn btn-outline-custom d-inline-flex align-items-center gap-2">
+              <i class="bi bi-chat-dots-fill"></i>
+              <span>Contactar</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna de Avatar Ilustrado -->
+        <div class="col-12 col-lg-5 text-center">
+          <div class="hero-avatar-wrapper">
+            <img src="img/avatar.svg" alt="Avatar Profesional de Emmanuel Granados Pulgarin" class="hero-avatar-img img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECCIÓN b. ESTUDIOS REALIZADOS
+       ====================================================================== -->
+  <section class="py-5" id="estudios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Formación Académica</span>
+        <h2 class="section-title">Estudios Realizados</h2>
+        <p class="section-subtitle">Trayectoria académica y competencias en formación profesional</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          <div class="custom-card timeline-card">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-start mb-3">
+              <div>
+                <h3 class="study-institution">Corporación Universitaria Lasallista</h3>
+                <h4 class="study-degree">Pregrado en Ingeniería Informática</h4>
+              </div>
+              <span class="study-badge mt-2 mt-md-0">
+                <i class="bi bi-calendar3 me-1"></i> 2024 - En curso (4.° Semestre)
+              </span>
+            </div>
+
+            <p class="text-muted mb-3">
+              Formación integral en ciencias de la computación, desarrollo de software, modelado de sistemas y resolución ingenieril de problemas tecnológicos en la sede de Caldas / Medellín, Antioquia.
+            </p>
+
+            <h5 class="fs-6 fw-bold mb-2">Competencias y Áreas Clave en Formación:</h5>
+            <div class="row g-2">
+              <div class="col-12 col-md-6">
+                <ul class="study-list">
+                  <li>Desarrollo Web Frontend y Diseño Responsivo (HTML, CSS, Bootstrap)</li>
+                  <li>Programación Orientada a Objetos y Algoritmos (Java, Python)</li>
+                  <li>Gestión y Modelado de Bases de Datos Relacionales (SQL)</li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6">
+                <ul class="study-list">
+                  <li>Estructuras de Datos y Pensamiento Algorítmico</li>
+                  <li>Arquitectura de Software y Patrones de Diseño</li>
+                  <li>Metodologías Ágiles, Control de Versiones con Git y GitHub</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECCIÓN c. PROYECTOS EN LOS QUE HA PARTICIPADO / EXPERIENCIA
+       ====================================================================== -->
+  <section class="py-5 bg-body-tertiary" id="proyectos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portafolio Práctico</span>
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <p class="section-subtitle">Aplicación práctica de conocimientos en desarrollo web, software y lógica de videojuegos</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Proyecto 1: INCIETEC (Proyecto Real del Usuario) -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="custom-card project-card">
+            <div class="project-img-wrapper">
+              <span class="project-featured-badge">
+                <i class="bi bi-star-fill me-1"></i> Destacado
+              </span>
+              <img src="img/project-incietec.svg" alt="Página web educativa para INCIETEC sobre prevención y cuidado de ETS">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Portal Web INCIETEC - Prevención ETS</h3>
+              <p class="project-desc">
+                Página web informativa e interactiva diseñada para la organización INCIETEC, enfocada en la concientización, cuidado y educación integral sobre Enfermedades de Transmisión Sexual (ETS) para promover la salud preventiva comunitaria.
+              </p>
+              
+              <div class="tech-tags">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Diseño Responsivo</span>
+              </div>
+
+              <div class="project-links mt-auto">
+                <a href="https://github.com/Emxs0" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom btn-sm flex-grow-1 d-inline-flex justify-content-center align-items-center gap-1">
+                  <i class="bi bi-github"></i> Código
+                </a>
+                <a href="#contacto" class="btn btn-primary-custom btn-sm flex-grow-1 d-inline-flex justify-content-center align-items-center gap-1">
+                  <i class="bi bi-info-circle"></i> Info
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2: Java & SQL -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="custom-card project-card">
+            <div class="project-img-wrapper">
+              <img src="img/project-java-sql.svg" alt="Sistema de Gestión en Java con Base de Datos SQL">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Sistema de Gestión &amp; Base de Datos SQL</h3>
+              <p class="project-desc">
+                Aplicación de software construida con Java aplicando Programación Orientada a Objetos (POO), arquitectura en capas e integración con motor de base de datos SQL para operaciones CRUD seguras y control de registros.
+              </p>
+              
+              <div class="tech-tags">
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">SQL</span>
+                <span class="tech-pill">JDBC</span>
+                <span class="tech-pill">POO</span>
+              </div>
+
+              <div class="project-links mt-auto">
+                <a href="https://github.com/Emxs0" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom btn-sm flex-grow-1 d-inline-flex justify-content-center align-items-center gap-1">
+                  <i class="bi bi-github"></i> Código
+                </a>
+                <a href="#contacto" class="btn btn-primary-custom btn-sm flex-grow-1 d-inline-flex justify-content-center align-items-center gap-1">
+                  <i class="bi bi-info-circle"></i> Info
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3: Videojuego en Python -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="custom-card project-card">
+            <div class="project-img-wrapper">
+              <img src="img/project-game.svg" alt="Prototipo de Videojuego 2D con Python y Pygame">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Prototipo de Videojuego 2D Arcade</h3>
+              <p class="project-desc">
+                Videojuego 2D desarrollado con Python explorando mecánicas interactivas, ciclo de juego (game loop), detección precisa de colisiones, animaciones por sprites y sistema de puntuación dinámica.
+              </p>
+              
+              <div class="tech-tags">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Pygame</span>
+                <span class="tech-pill">Game Physics</span>
+                <span class="tech-pill">Algoritmos</span>
+              </div>
+
+              <div class="project-links mt-auto">
+                <a href="https://github.com/Emxs0" target="_blank" rel="noopener noreferrer" class="btn btn-outline-custom btn-sm flex-grow-1 d-inline-flex justify-content-center align-items-center gap-1">
+                  <i class="bi bi-github"></i> Código
+                </a>
+                <a href="#contacto" class="btn btn-primary-custom btn-sm flex-grow-1 d-inline-flex justify-content-center align-items-center gap-1">
+                  <i class="bi bi-info-circle"></i> Info
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECCIÓN d. LENGUAJES DE PROGRAMACIÓN QUE DOMINA
+       ====================================================================== -->
+  <section class="py-5" id="habilidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Stack Técnico</span>
+        <h2 class="section-title">Lenguajes de Programación</h2>
+        <p class="section-subtitle">Tecnologías y lenguajes aplicados en proyectos académicos y desarrollos web</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Java -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="custom-card skill-card">
+            <div class="skill-icon-box icon-java">
+              <i class="bi bi-cup-hot-fill"></i>
+            </div>
+            <h4>Java</h4>
+            <div class="skill-level-text">Intermedio / POO</div>
+            <div class="progress" role="progressbar" aria-label="Nivel de Java" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Python -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="custom-card skill-card">
+            <div class="skill-icon-box icon-python">
+              <i class="bi bi-terminal-fill"></i>
+            </div>
+            <h4>Python</h4>
+            <div class="skill-level-text">Intermedio / Lógica</div>
+            <div class="progress" role="progressbar" aria-label="Nivel de Python" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-primary" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HTML5 -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="custom-card skill-card">
+            <div class="skill-icon-box icon-html">
+              <i class="bi bi-filetype-html"></i>
+            </div>
+            <h4>HTML5</h4>
+            <div class="skill-level-text">Avanzado / Semántico</div>
+            <div class="progress" role="progressbar" aria-label="Nivel de HTML5" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-danger" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS3 -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="custom-card skill-card">
+            <div class="skill-icon-box icon-css">
+              <i class="bi bi-filetype-css"></i>
+            </div>
+            <h4>CSS3</h4>
+            <div class="skill-level-text">Avanzado / Responsive</div>
+            <div class="progress" role="progressbar" aria-label="Nivel de CSS3" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-info" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQL -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="custom-card skill-card">
+            <div class="skill-icon-box icon-sql">
+              <i class="bi bi-database-fill"></i>
+            </div>
+            <h4>SQL</h4>
+            <div class="skill-level-text">Intermedio / Relacional</div>
+            <div class="progress" role="progressbar" aria-label="Nivel de SQL" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-dark" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="custom-card skill-card">
+            <div class="skill-icon-box icon-js">
+              <i class="bi bi-filetype-js"></i>
+            </div>
+            <h4>JavaScript</h4>
+            <div class="skill-level-text">Intermedio / DOM</div>
+            <div class="progress" role="progressbar" aria-label="Nivel de JavaScript" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar bg-warning" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECCIÓN e. ÁREAS DE INTERÉS PROFESIONAL
+       ====================================================================== -->
+  <section class="py-5 bg-body-tertiary" id="intereses">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Visión de Futuro</span>
+        <h2 class="section-title">Áreas de Interés Profesional</h2>
+        <p class="section-subtitle">Campos de especialización tecnológica en los que enfoco mi proyección profesional</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Interés 1: Desarrollo Web Full Stack -->
+        <div class="col-12 col-md-6">
+          <div class="custom-card interest-card interest-card-web">
+            <div class="interest-icon-large">
+              <i class="bi bi-code-square"></i>
+            </div>
+            <h3>Desarrollo Web Full Stack</h3>
+            <p>
+              Interés en la concepción y construcción de aplicaciones web completas de extremo a extremo. Creación de interfaces de usuario modernas, responsivas e intuitivas en el frontend complementadas con arquitecturas de backend sólidas, servicios RESTful y bases de datos relacionales estructuradas.
+            </p>
+            <h6 class="fw-bold fs-6 mb-2">Ecosistema y Tecnologías de Enfoque:</h6>
+            <div class="interest-stack-list">
+              <span class="interest-stack-item">Bootstrap 5</span>
+              <span class="interest-stack-item">JavaScript ES6+</span>
+              <span class="interest-stack-item">Backend en Java / Python</span>
+              <span class="interest-stack-item">Bases de Datos SQL</span>
+              <span class="interest-stack-item">APIs REST</span>
+              <span class="interest-stack-item">Git &amp; GitHub Pages</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interés 2: Desarrollo de Videojuegos -->
+        <div class="col-12 col-md-6">
+          <div class="custom-card interest-card interest-card-game">
+            <div class="interest-icon-large">
+              <i class="bi bi-controller"></i>
+            </div>
+            <h3>Desarrollo de Videojuegos</h3>
+            <p>
+              Fascinación por el diseño y la programación lúdica, explorando motores gráficos, lógica de físicas bidimensionales y tridimensionales, inteligencia artificial para enemigos o NPCs, y la creación de narrativas inmersivas que conecten con los jugadores mediante una jugabilidad fluida y bien optimizada.
+            </p>
+            <h6 class="fw-bold fs-6 mb-2">Ecosistema y Tecnologías de Enfoque:</h6>
+            <div class="interest-stack-list">
+              <span class="interest-stack-item">Python &amp; Pygame</span>
+              <span class="interest-stack-item">Lógica y Game Loops</span>
+              <span class="interest-stack-item">Físicas 2D &amp; Colisiones</span>
+              <span class="interest-stack-item">Motores Gráficos (Unity / Unreal)</span>
+              <span class="interest-stack-item">Game Design &amp; UX Lúdica</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       SECCIÓN DE CONTACTO
+       ====================================================================== -->
+  <section class="py-5" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Conectemos</span>
+        <h2 class="section-title">Información de Contacto</h2>
+        <p class="section-subtitle">¿Tienes alguna propuesta o deseas ponerte en contacto conmigo? Escríbeme</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Tarjeta de Información Directa -->
+        <div class="col-12 col-lg-5">
+          <div class="custom-card p-4 p-md-5 h-100">
+            <h3 class="fs-4 fw-bold mb-4">Información Directa</h3>
+            
+            <div class="d-flex align-items-start gap-3 mb-4">
+              <div class="p-3 rounded-circle bg-primary-subtle text-primary fs-5">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div>
+                <div class="text-muted small">Nombre Completo</div>
+                <div class="fw-bold">Emmanuel Granados Pulgarin</div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-3 mb-4">
+              <div class="p-3 rounded-circle bg-primary-subtle text-primary fs-5">
+                <i class="bi bi-envelope-at-fill"></i>
+              </div>
+              <div>
+                <div class="text-muted small">Correo Electrónico</div>
+                <a href="mailto:emmanuelgranados2007@gmail.com" class="fw-bold text-decoration-none">
+                  emmanuelgranados2007@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-3 mb-4">
+              <div class="p-3 rounded-circle bg-primary-subtle text-primary fs-5">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <div class="text-muted small">Ubicación</div>
+                <div class="fw-bold">Medellín, Colombia</div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-3">
+              <div class="p-3 rounded-circle bg-primary-subtle text-primary fs-5">
+                <i class="bi bi-buildings-fill"></i>
+              </div>
+              <div>
+                <div class="text-muted small">Universidad</div>
+                <div class="fw-bold">Corporación Universitaria Lasallista</div>
+                <div class="text-muted small">Ingeniería Informática - Semestre 4</div>
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div>
+              <div class="text-muted small mb-2">Redes y Repositorios</div>
+              <div class="d-flex gap-2">
+                <a href="https://github.com/Emxs0" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="GitHub de Emmanuel Granados">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="mailto:emmanuelgranados2007@gmail.com" class="social-circle-link" title="Enviar Correo">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario de Contacto Funcional Estético -->
+        <div class="col-12 col-lg-7">
+          <div class="custom-card p-4 p-md-5 h-100">
+            <h3 class="fs-4 fw-bold mb-4">Envíame un Mensaje</h3>
+            
+            <div id="contactFeedback" class="alert alert-success d-none mb-3" role="alert">
+              <i class="bi bi-check-circle-fill me-2"></i>
+              ¡Gracias por tu mensaje! Se ha registrado correctamente la solicitud de contacto.
+            </div>
+
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-12 col-sm-6">
+                  <label for="nameInput" class="form-label small fw-semibold">Tu Nombre</label>
+                  <input type="text" class="form-control" id="nameInput" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <label for="emailInput" class="form-label small fw-semibold">Tu Correo Electrónico</label>
+                  <input type="email" class="form-control" id="emailInput" placeholder="nombre@correo.com" required>
+                </div>
+                <div class="col-12">
+                  <label for="subjectInput" class="form-label small fw-semibold">Asunto</label>
+                  <input type="text" class="form-control" id="subjectInput" placeholder="Motivo del contacto o proyecto" required>
+                </div>
+                <div class="col-12">
+                  <label for="messageInput" class="form-label small fw-semibold">Mensaje</label>
+                  <textarea class="form-control" id="messageInput" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-primary-custom w-100 py-2 d-inline-flex align-items-center justify-content-center gap-2">
+                    <i class="bi bi-send-fill"></i>
+                    <span>Enviar Mensaje</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row align-items-center gy-3 text-center text-md-start">
+        <div class="col-12 col-md-6">
+          <span class="footer-brand gradient-text">Emmanuel Granados Pulgarin</span>
+          <p class="text-muted small mb-0 mt-1">
+            Portafolio Desarrollado para la Asignatura <strong>Desarrollo Web</strong> (Parcial 2).<br>
+            Docente: Néstor Vélez Vargas • Corporación Universitaria Lasallista.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <p class="text-muted small mb-2">
+            © <span id="currentYear">2026</span> Emmanuel Granados Pulgarin. Todos los derechos reservados.
+          </p>
+          <div class="d-inline-flex gap-2">
+            <a href="https://github.com/Emxs0" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="mailto:emmanuelgranados2007@gmail.com" class="social-circle-link" aria-label="Correo Electrónico">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 Bundle with Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
